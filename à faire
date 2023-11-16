@@ -1,0 +1,14 @@
+Respects des standards 
+    -> Nom des variables / fonctions / classes
+    -> français ou anglais
+Lien entre les classes
+    -> teamId X on parle de Team $team
+Un jeu d'essai complet
+Héritage Person (abstract) Player StaffMember
+BDD -> clés primaires + structure
+
+finaliser camelCase
+tableau pour plusieurs joueurs dans team
+
+relation unidirectionnelle (accessible d'un seul côté)
+relation bidirectionnelle (accessible des 2 cotés)
