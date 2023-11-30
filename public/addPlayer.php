@@ -260,7 +260,7 @@ if(empty($_POST) === false)
         </div>
     </div>
     <?php
-    var_dump($_POST);
+    //var_dump($_POST);
     ?>
 </body>
 </html>

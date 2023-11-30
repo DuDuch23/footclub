@@ -64,7 +64,7 @@ if(empty($_POST) === false)
         </form>
     </div>
     <?php
-    var_dump($_POST);
+    //var_dump($_POST);
     ?>
 </body>
 </html>
