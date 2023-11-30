@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Database\MySql;
 use App\Model\Player;
 
-final readonly class PlayerController
+final class PlayerController
 {
 
     public static function getLastId(): int

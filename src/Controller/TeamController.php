@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Database\MySql;
 use App\Model\Team;
 
-final readonly class TeamController
+final class TeamController
 {
     public static function getAll(): array
     {

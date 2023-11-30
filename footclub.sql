@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 06 nov. 2023 à 04:30
+-- Généré le : jeu. 30 nov. 2023 à 09:40
 -- Version du serveur : 10.4.27-MariaDB
 -- Version de PHP : 8.2.0
 
@@ -37,6 +37,14 @@ CREATE TABLE `match_foot` (
   `team_opponent_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `match_foot`
+--
+
+INSERT INTO `match_foot` (`id_match`, `score_team`, `score_team_opponent`, `date_match`, `team_id`, `city_match`, `team_opponent_id`) VALUES
+(1, 2, 3, '2023-03-22 00:00:00', 1, 'Crépy en Valois', 1),
+(2, 22, 22, '2222-02-22 00:00:00', 1, 'Crépy en Valois', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -50,6 +58,13 @@ CREATE TABLE `member_staff` (
   `picture_member_staff` varchar(255) NOT NULL,
   `role_member_staff_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `member_staff`
+--
+
+INSERT INTO `member_staff` (`id_member_staff`, `firstname_member_staff`, `lastname_member_staff`, `picture_member_staff`, `role_member_staff_name`) VALUES
+(1, 'Florient', 'Jesaisplus', '1999-09-06', 'Préparateur');
 
 -- --------------------------------------------------------
 
@@ -79,7 +94,8 @@ INSERT INTO `player` (`id_player`, `firstname_player`, `lastname_player`, `birth
 (50, 'Evan', 'Jerequiel', '2003-04-05', 'c81.jpg'),
 (51, 'oui', 'ouoi', '1555-12-15', 'c81.jpg'),
 (52, 'oui', 'ouoi', '1555-12-15', 'c81.jpg'),
-(53, 'testModif', 'testModif', '8888-08-08', '619f9a490f6ba_Mematic_20211125_151323.jpg.jpg');
+(53, 'testModif', 'testModif', '8888-08-08', '619f9a490f6ba_Mematic_20211125_151323.jpg.jpg'),
+(54, 'TestModif', 'TestModif', '2222-02-22', 'bdd symfony.PNG');
 
 -- --------------------------------------------------------
 
@@ -238,19 +254,19 @@ ALTER TABLE `team_opponent`
 -- AUTO_INCREMENT pour la table `match_foot`
 --
 ALTER TABLE `match_foot`
-  MODIFY `id_match` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_match` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `member_staff`
 --
 ALTER TABLE `member_staff`
-  MODIFY `id_member_staff` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_member_staff` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `player`
 --
 ALTER TABLE `player`
-  MODIFY `id_player` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id_player` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT pour la table `team`

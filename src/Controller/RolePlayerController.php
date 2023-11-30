@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Database\MySql;
 
-final readonly class RolePlayerController
+final class RolePlayerController
 {
     public static function getAll(): array
     {

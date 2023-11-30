@@ -6,7 +6,7 @@ use App\Database\MySql;
 use App\Model\TeamOpponent;
 use App\Model\Team;
 
-final readonly class TeamOpponentController
+final class TeamOpponentController
 {
     public static function getAll(): array
     {

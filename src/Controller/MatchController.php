@@ -5,7 +5,7 @@ namespace App\Controller;
 use App\Database\MySql;
 use App\Model\MatchClass;
 
-final readonly class MatchController
+final class MatchController
 {
     public static function getAll(): array
     {

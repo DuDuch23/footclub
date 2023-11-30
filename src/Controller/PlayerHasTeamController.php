@@ -7,7 +7,7 @@ use App\Model\PlayerHasTeam;
 use App\Model\Player;
 use App\Model\Team;
 
-final readonly class PlayerHasTeamController
+final class PlayerHasTeamController
 {
     public static function getAll(): array
     {
