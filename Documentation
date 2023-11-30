@@ -1,3 +1,4 @@
 git clone https://github.com/DuDuch23/footclub.git
 Application web de gestion d'un club de football, fonctionnalités ; ajout, modification et suppression de Joueur de foot, de match, équipes, équipes adverses et d'agents de sécurités.
 installer footclub.sql dans phpmyadmin ou autre site de gestion de base de données
+pour connecter votre base de donnée au projet aller dans config/parameter.php et mettez y les infos de votre bdd
